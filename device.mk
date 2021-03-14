@@ -43,6 +43,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     device/oneplus/common
 
+# Wifi Overlay
+PRODUCT_PACKAGES += \
+    OnePlus6TWifiOverlay
+
 # Inherit from oneplus sdm845-common
 $(call inherit-product, device/oneplus/sdm845-common/common.mk)
 
