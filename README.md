@@ -24,6 +24,6 @@ Copyright 2018 - The LineageOS Project.
 
 ```
 # Compiling
-lunch cherish_fajita-userdebug (this will auto pull all dependencies)
-brunch fajita
+lunch aosp_fajita-userdebug (this will auto pull all dependencies)
+mka bacon
 ```
