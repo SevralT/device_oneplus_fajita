@@ -21,20 +21,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from fajita device
 $(call inherit-product, device/oneplus/fajita/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common dotOS Fan Edition stuff.
+$(call inherit-product, vendor/dotfe/config/common.mk)
 
-PRODUCT_NAME := lineage_fajita
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_NAME := dotfe_fajita
 PRODUCT_DEVICE := fajita
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := ONEPLUS A6013
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=OnePlus6T \
-    PRODUCT_NAME=OnePlus6T \
-    PRIVATE_BUILD_DESC="OnePlus6T-user 9 PKQ1.180716.001 1812260627 release-keys"
-
-BUILD_FINGERPRINT := OnePlus/OnePlus6T/OnePlus6T:9/PKQ1.180716.001/1812260627:user/release-keys

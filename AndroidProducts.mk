@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_fajita.mk
+    $(LOCAL_DIR)/dotfe_fajita.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_fajita-user \
-    lineage_fajita-userdebug \
-    lineage_fajita-eng
+    dotfe_fajita-user \
+    dotfe_fajita-userdebug \
+    dotfe_fajita-eng
