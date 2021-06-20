@@ -20,7 +20,7 @@
 DEVICE_PATH := device/oneplus/fajita
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := OnePlus6T
+TARGET_OTA_ASSERT_DEVICE := OnePlus6T, fajita
 
 # Kernel
 TARGET_KERNEL_CONFIG := enchilada_defconfig
