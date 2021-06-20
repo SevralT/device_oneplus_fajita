@@ -23,7 +23,7 @@ DEVICE_PATH := device/oneplus/fajita
 TARGET_OTA_ASSERT_DEVICE := OnePlus6T
 
 # Kernel
-TARGET_KERNEL_CONFIG := kronic_defconfig
+TARGET_KERNEL_CONFIG := enchilada_defconfig
 
 # FOD
 TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.oneplus_fajita
