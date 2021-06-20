@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_fajita.mk
+    $(LOCAL_DIR)/p404_fajita.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_fajita-user \
-    cherish_fajita-userdebug \
-    cherish_fajita-eng
+    p404_fajita-user \
+    p404_fajita-userdebug \
+    p404_fajita-eng
