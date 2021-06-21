@@ -20,15 +20,16 @@ Copyright 2018 - The LineageOS Project.
 
 ![OnePlus 6T](https://cdn2.gsmarena.com/vv/pics/oneplus/oneplus-6t-thunder-purple-1.jpg "OnePlus 6T")
 
-## Temporary build instructions
+## Build instructions
 
 ```
-# Compiling
-$ m[ake|ka] bootimage systemimage
+# Syncing sources
+$ mkdir potato && cd potato
+$ repo init -u https://github.com/PotatoProject/manifest -b dumaloo-release
+$ repo sync
 
-# Installing
-$ fastboot --disable-verity --disable-verification flash vbmeta stock_vbmeta.img
-$ fastboot flash boot boot.img
-$ fastboot flash system system.img
-$ fastboot -w reboot
+# Building
+$ source build/envsetup.sh
+$ lunch potato_fajita-userdebug
+$ brunch fajita
 ```
